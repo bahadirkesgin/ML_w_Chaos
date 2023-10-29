@@ -1,0 +1,35 @@
+* C:\Users\Excalibur\Downloads\lorenz (2).asc
+B§U2 N005 0 V=(V(x)*-V(y))/10
+E§U1D z 0 0 N006 10Meg
+C1 z N006 1n
+S1 N014 N011 N012 0 Switch
+V1 N012 0 PULSE(0 2 0 0 0 1m 70m)
+V2 N011 -x 1.3
+R4 N009 N006 75k
+B§U3 N010 0 V=(V(-x)*-V(z))/10
+R10 N008 N010 20k
+E§U1C y 0 0 N008 10Meg
+C5 y N008 1n
+R11 y N008 1Meg
+R13 -x N014 100k
+E§U1B -x 0 0 N014 10Meg
+C9 -x N014 1n
+R12 N014 y 100k
+R14 N013 -x 10k
+E§U1A x 0 0 N013 10Meg
+R15 x N013 10k
+R9 N008 N007 21k1
+R5 z N009 300k
+R3 N006 N005 20k
+R8 N007 -x 2k7
+S2 N008 N001 N003 0 Switch
+V3 N003 0 PULSE(0 2 0 0 0 1m 70m)
+V4 N001 y 1.05
+S3 N006 N002 N004 0 Switch
+V5 N004 0 PULSE(0 2 0 0 0 1m 70m)
+V6 N002 z 1.3
+.tran 0 2m 1m 1u startup
+.model Switch SW(Vt=1)
+.options plotwinsize=0
+.backanno
+.end
