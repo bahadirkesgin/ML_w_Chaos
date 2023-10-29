@@ -4,6 +4,9 @@ This repository contains code used for the manuscript title as Machine Learing w
 # Content
 Content contains raw data and Python and Matlab codes for tasks given in aforementioned manuscript. Code for numerical and circuit simulations alongside LTSpice circuit netlists is provided.
 
+# DOI and Zenodo
+https://zenodo.org/doi/10.5281/zenodo.10051449
+
 # License and Citation
 This project is covered under the Creative Common (CC BY NC) License. The data and code are avaiable for non-commercial research purposes only with proper citation to this manuscript.
 
