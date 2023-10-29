@@ -9,14 +9,4 @@ This project is covered under the Creative Common (CC BY NC) License. The data a
 
 Kesgin, B. U. & Teğin, U. Machine Learning with Chaotic Strange Attractors. Preprint at https://doi.org/10.48550/arXiv.2309.13361 (2023).
 
-@misc{kesgin2023machine,
-      title={Machine Learning with Chaotic Strange Attractors}, 
-      author={Bahadır Utku Kesgin and Uğur Teğin},
-      year={2023},
-      eprint={2309.13361},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
-
-
 
