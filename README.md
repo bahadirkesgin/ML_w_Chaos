@@ -1,5 +1,5 @@
 # Machine Learning with Chaotic Strange Attractors
-This repository contains code used for the manuscript title as Machine Learing with Chaotic Strange Attractors by Kesgin and Tegin. https://arxiv.org/abs/2309.13361
+This repository contains code used for the manuscript titled as Machine Learing with Chaotic Strange Attractors by Kesgin and Teğin. https://arxiv.org/abs/2309.13361
 
 # Content
 Content contains raw data and Python and Matlab codes for tasks given in aforementioned manuscript. Code for numerical and circuit simulations alongside LTSpice circuit netlists is provided.
