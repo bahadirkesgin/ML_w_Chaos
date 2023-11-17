@@ -10,7 +10,7 @@ opts.ExtraColumnsRule = "ignore";
 opts.EmptyLineRule = "read";
 opts = setvaropts(opts, "Var1", "WhitespaceRule", "preserve");
 opts = setvaropts(opts, "Var1", "EmptyFieldRule", "auto");
-df = readtable("C:\Users\Excalibur\Desktop\Lab Docs\Chaotic Learning Systems\LORENZ REAL DATA TESTS\Regession\ABALONE\abalone.csv", opts);
+df = readtable("abalone.csv", opts);
 df = table2array(df);
 clear opts
 opts = delimitedTextImportOptions("NumVariables", 9);
@@ -23,7 +23,7 @@ opts.ExtraColumnsRule = "ignore";
 opts.EmptyLineRule = "read";
 opts = setvaropts(opts, ["M", "Var2", "Var3", "Var4", "Var5", "Var6", "Var7", "Var8", "Var9"], "WhitespaceRule", "preserve");
 opts = setvaropts(opts, ["M", "Var2", "Var3", "Var4", "Var5", "Var6", "Var7", "Var8", "Var9"], "EmptyFieldRule", "auto");
-gender = readmatrix("C:\Users\Excalibur\Desktop\Lab Docs\Chaotic Learning Systems\LORENZ REAL DATA TESTS\Regession\ABALONE\abalone.csv", opts);
+gender = readmatrix("abalone.csv", opts);
 clear opts
 
 gender_numeric = zeros(length(gender), 1);

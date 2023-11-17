@@ -18,7 +18,7 @@ opts.EmptyLineRule = "read";
 % Specify variable properties
 opts = setvaropts(opts, "Var1", "WhitespaceRule", "preserve");
 opts = setvaropts(opts, ["Var1", "VarName14"], "EmptyFieldRule", "auto");
-tbl = readtable("C:\Users\Excalibur\Desktop\Lab Docs\Chaotic Learning Systems\LORENZ REAL DATA TESTS\Classification\LIVER\SMOTLIVER.csv", opts);
+tbl = readtable("SMOTLIVER.csv", opts);
 VarName2 = tbl.VarName2;
 VarName3 = tbl.VarName3;
 VarName4 = tbl.VarName4;
@@ -56,11 +56,7 @@ for i = 1:size_test(1)
 end
 base_acc = true_count / size_test(1);
 fprintf("Linear Baseline Accuracy: %f percent\n",base_acc*100);
-%% Optimizer
-num1 = optimizableVariable('n1',[25,100],'Type','real');
-fun = @(x)foroptim(x_train,x_test,y_train,y_test,x.n1,100);
-results = bayesopt(fun,num1);
-%% ITERATE RHO FROM 20 TO 100
+%% ITERATE RHO FROM 1 TO 100
 for i = 1:100
     index = i;
     lyapdata(index,1) = i;

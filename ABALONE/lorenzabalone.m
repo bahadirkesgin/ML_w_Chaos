@@ -6,7 +6,7 @@ function [output_mat] = lorenzabalone(inp_mtx,rho,tmax)
     sigma = 10;
     beta = 8/3;
     parfor i = 1:8
-        [t,a] = normallorenz(sigma, beta, rho,[0,tmax], 0.01, inp_mtx(:,i), 1.05, -inp_mtx(:,i));
+        [t,a] = computelorenz(sigma, beta, rho,[0,tmax], 0.01, inp_mtx(:,i), 1.05, -inp_mtx(:,i));
         output_mat(i,:) = reshape(a(end,:)', 1, []);
     end
     output_mat = reshape(output_mat.',1,[]);
