@@ -29,7 +29,7 @@ def lorenz_transformer(x0, y0, z0,sigma=10, beta=2.667, rho=97, tmax=20.0, h=0.0
         #return [9*(x[1]-x[0]+gamma*x[0]+1/2*((8/7)-(5/7))*(abs(x[0]+1)-abs(x[0]-1))), x[0]-x[1]+x[2], -(100/7)*x[1]]
 
     #def f(t,x): #Rossler attractor 
-        #return [-x[1]-x[2],x[0]+0.2*x[1],0.2+x[2]*(x[0]*5.7)]
+        #return [-x[1]-x[2],x[0]+0.2*x[1],0.2+x[2]*(x[0]-5.7)]
     
     #def f(t,x): #Sprott attractor
         #return [x[1]+2.07*x[0]*x[1]+x[0]*x[2], 1-1.79*x[0]**2+x[1]*x[2], x[0]-x[0]**2-x[1]**2]
